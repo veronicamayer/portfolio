@@ -8,34 +8,40 @@
 font-family: Inter;
 */
 
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Inter;
-    font-weight: 200;
-
+    font-weight: 150;
 }
+
+.accentColor {
+    color: #E6534E;
+}
+
+/* header nav bar */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 8vh 3vw;
+    padding: 6vh 3vw;
 }
 
 h1 {
-    color: #E6534E;
     font-size: 20px;
     line-height: 24px;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.1em;
+    border: solid #E6534E;
+    border-width: 2px 2px 8px 2px;
+    padding: 8px 15px 5px 15px;
+    text-transform: uppercase;
 }
 
 a {
     text-decoration: none;
-    margin: 0 2vw;
+    margin-left: 2vw;
     color: #333333;
     font-size: 16px;
     line-height: 19px;
@@ -47,10 +53,140 @@ a {
     background-color: #E6534E;
     color: white;
     border-radius: 25px;
-    padding: 1vh 6vh;
+    padding: 1vh 3vw;
 }
 
 .button:hover {
     color: #E6534E;
     background-color: white;
 }
+
+/* Welcome section */
+
+.welcomeSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10vh 9vw 20vh 9vw;
+}
+
+.arrow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.line {
+    height: 2px;
+    width: 6vw;
+    background-color: #E6534E;
+}
+
+.right {
+    width: 15px;
+    height: 15px;
+    box-shadow: -2px 2px 0 #E6534E;
+    transform: rotate(-135deg);
+}
+
+.willkommen {
+    margin-left: 2vw;
+}
+
+.welcomeText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40vw;
+}
+
+.articlePortrait {
+    width: 40vw;
+}
+
+.imgPortrait {
+    width: 100%;
+    box-shadow: 20px 20px #E6534E;
+}
+
+.subtitle {
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 3vh 0;
+    letter-spacing: 0.15em;
+
+}
+
+.titel {
+    font-weight: 600;
+    font-size: 67px;
+    line-height: 81px;
+}
+
+.buttonGross {
+    /* wenn ich die border erst beim hover hinzufüge verschiebt sich der Rest der nav, sieht komisch aus */
+    border: 2px solid #E6534E; 
+    background-color: #E6534E;
+    color: white;
+    border-radius: 50px;
+    padding: 2vh 4vw;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin: 2vh 0;
+}
+
+.buttonGross:hover {
+    color: #E6534E;
+    background-color: white;
+}
+
+
+/* About Me section */
+
+
+.sectionAboutMe {
+    padding: 20vh 0;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #E5E3DF;
+    padding: 20vh 9vw;
+}
+
+.articleÜberMichLogo {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+.pÜberMich {
+    font-weight: 1000;
+    font-size: 100px;
+    line-height: 93px;
+}
+
+.pMichRechts {
+    display: flex;
+    align-self: flex-end;
+}
+
+.articleAboutMeText {
+    width: 55vw;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+    padding: 0 7vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.Logos {
+    margin: 10px 30px 0 0;
+}
+
+.imgLogos {
+    width: 40px;
+}
+
