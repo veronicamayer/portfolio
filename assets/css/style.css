@@ -22,7 +22,7 @@ font-family: Inter;
 header {
     display: flex;
     justify-content: space-between;
-    align-content: baseline;
+    align-items: baseline;
     padding: 8vh 3vw;
 }
 
