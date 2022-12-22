@@ -27,6 +27,10 @@ font-family: 'Inter Bold';
     color: #E6534E;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* header nav bar */
 
 header {
